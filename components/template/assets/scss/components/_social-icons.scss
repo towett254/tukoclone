@@ -1,0 +1,84 @@
+//
+// Social Icons
+//
+
+/* style 01 */
+.social-icon li {
+  display: inline-block;
+  margin-right: 1rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    font-size: 1.16rem;
+    color: $primary;
+  }
+}
+
+/* style 02 */
+.social-icon2 {
+  li {
+    display: inline-block;
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      font-size: 20px;
+      color: $dark;
+    }
+  }
+
+  &.light li a {
+    color: #c2c7cc;
+  }
+}
+
+/* style 03 */
+.social-icon3 li {
+  display: inline-block;
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid $primary;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 15px;
+    display: inline-block;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+/* style 04 */
+.social-icon4 li {
+  display: inline-block;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    font-size: 18px;
+    color: rgba($white, $opacity9);
+
+    &:hover {
+      color: rgba($white, $opacityfull);
+    }
+  }
+}

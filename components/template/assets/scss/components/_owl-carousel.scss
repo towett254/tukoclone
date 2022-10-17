@@ -1,0 +1,20 @@
+//
+// Owl carousel
+//
+
+.owl-carousel .owl-item img {
+  width: auto;
+  display: inline-block;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  margin: 0;
+
+  span {
+    background: rgba($primary, 0.2);
+  }
+
+  &.active span, &:hover span {
+    background: $primary;
+  }
+}

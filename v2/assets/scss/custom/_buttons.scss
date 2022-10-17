@@ -1,0 +1,171 @@
+
+//
+// Bootstrap buttons overrides
+//
+
+/*buttons*/
+.btn {
+  font-weight: 600;
+
+  &.btn-md {
+    padding: 0.70rem 1.5rem;
+  }
+
+  &.btn-xs {
+    font-size: 0.6875rem;
+    font-weight: 400;
+    padding: 0.4375rem 0.9375rem;
+  }
+
+  &.btn-lg {
+    padding: 0.70rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  &.btn-wide {
+    min-width: 9.6875rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  &.btn-pill {
+    border-radius: 6.1875rem;
+  }
+}
+
+
+.btn {
+  &.btn-primary:hover {
+    box-shadow: 0 4px 11px rgba($primary , 0.35);
+  }
+
+  &.btn-secondary:hover {
+    box-shadow: 0 4px 11px rgba($secondary, 0.35);
+  }
+
+  &.btn-success:hover {
+    box-shadow: 0 4px 11px rgba($success, 0.35);
+  }
+
+  &.btn-danger:hover {
+    box-shadow: 0 4px 11px rgba($danger, 0.35);
+  }
+
+  &.btn-warning:hover {
+    box-shadow: 0 4px 11px rgba($warning, 0.35);
+  }
+
+  &.btn-info:hover {
+    box-shadow: 0 4px 11px rgba($info, 0.35);
+  }
+
+  &.btn-light:hover {
+    box-shadow: 0 4px 11px rgba($light, 0.35);
+  }
+
+  &.btn-white:hover {
+    box-shadow: 0 4px 11px rgba($white, 0.35);
+  }
+
+  &.btn-dark:hover {
+    box-shadow: 0 4px 11px rgba($dark, 0.35);
+  }
+}
+
+.btn {
+  &.btn-light-primary {
+    background: rgba($primary, 0.1);
+    color: $primary;
+
+    &:hover {
+      color: $white;
+      background-color: $primary;
+      box-shadow: 0 4px 11px rgba($primary, 0.35);
+    }
+  }
+
+  &.btn-light-secondary {
+    background: rgba($secondary, 0.1);
+    color: $secondary;
+
+    &:hover {
+      color: $white;
+      background-color: $secondary;
+      box-shadow: 0 4px 11px rgba($secondary, 0.35);
+    }
+  }
+
+  &.btn-light-success {
+    background: rgba($success, 0.1);
+    color: $success;
+
+    &:hover {
+      color: $white;
+      background-color: $success;
+      box-shadow: 0 4px 11px rgba($success, 0.35);
+    }
+  }
+
+  &.btn-light-danger {
+    background: rgba($danger, 0.1);
+    color: $danger;
+
+    &:hover {
+      color: $white;
+      background-color: $danger;
+      box-shadow: 0 4px 11px rgba($danger, 0.35);
+    }
+  }
+
+  &.btn-light-warning {
+    background: rgba($warning, 0.1);
+    color: $warning;
+
+    &:hover {
+      color: $white;
+      background-color: $warning;
+      box-shadow: 0 4px 11px rgba($warning, 0.35);
+    }
+  }
+
+  &.btn-light-info {
+    background: rgba($info, 0.1);
+    color: $info;
+
+    &:hover {
+      color: $white;
+      background-color: $info;
+      box-shadow: 0 4px 11px rgba($info, 0.35);
+    }
+  }
+
+  &.btn-light-light {
+    background: rgba($light, 0.1);
+
+    &:hover {
+      background-color: $light;
+      box-shadow: 0 4px 11px rgba($light, 0.35);
+    }
+  }
+
+  &.btn-light-white {
+    background: rgba($white, 0.1);
+
+    &:hover {
+      background-color: $white;
+      box-shadow: 0 4px 11px rgba($white, 0.35);
+    }
+  }
+
+  &.btn-light-dark {
+    background: rgba($dark, 0.1);
+    color: $dark;
+
+    &:hover {
+      color: $white;
+      background-color: $dark;
+      box-shadow: 0 4px 11px rgba($dark, 0.35);
+    }
+  }
+}

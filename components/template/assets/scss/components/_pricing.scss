@@ -1,0 +1,47 @@
+//
+// Pricing
+//
+
+/* pricing style */
+.pricing-table tr {
+  th {
+    padding: 1.5rem;
+    border-right: 1px solid #dee2e6;
+    min-width: 10rem;
+  }
+
+  td {
+    padding: 1.5rem;
+    vertical-align: middle;
+    border-right: 1px solid #dee2e6;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+  .pricing-table tr th {
+    min-width: 5rem;
+  }
+
+}
+
+
+/* pricing style one */
+.pricing-style-one .price {
+  span {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    color: $gray-300;
+  }
+
+  h3 {
+    z-index: 9;
+  }
+}

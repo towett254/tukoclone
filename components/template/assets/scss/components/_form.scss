@@ -1,0 +1,153 @@
+//
+// Form
+//
+
+/* common class*/
+.form-control {
+    height: 43px;
+  }
+
+.quick-contact .form-control {
+    height: 53px; 
+}
+
+
+/* quform */
+.quform-input {
+  position: relative;
+}
+
+.quform-element > label {
+  font-weight: normal;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  color: $gray-600;
+
+  .quform-required {
+    color: #cc0101;
+    font-size: 10px;
+  }
+}
+
+.quform-inner input {
+  width: 100%;
+}
+
+.quform-elements .quform-element textarea
+{
+  margin-bottom: 0;
+  padding: 8px 15px;
+  vertical-align: top;
+}
+
+.quform-elements .quform-element select
+{
+  margin-bottom: 0;
+  padding: 8px 15px;
+}
+
+.quform-errors {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+
+  > .quform-error {
+    padding: 0;
+    background: none;
+    border: none;
+    float: none;
+    color: #f5543f;
+    font-size: 11px;
+    line-height: normal;
+  }
+}
+
+.quform-outer-no-js .quform-error {
+  padding: 0;
+  background: none;
+  border: none;
+  float: none;
+  color: #f5543f;
+  font-size: 11px;
+  line-height: normal;
+}
+
+.quform-has-error {
+  input, textarea, select, input[type="file"]  {
+    border-color: #f5543f;
+  }
+
+  .custom-file-label {
+    border-color: #f5543f;
+  }
+}
+
+.quform-success-message, .quform-outer-no-js .quform-success-message {
+  padding: .75rem 1.25rem .75rem 3rem;
+}
+
+.quform-input .quform-errors-wrap {
+  position: absolute;
+  right: 8px;
+  top: 0;
+  line-height: normal;
+}
+
+.quform-submit-inner {
+  float: none;
+}
+
+.quform-loading-wrap {
+  float: none;
+}
+
+.quform-loading-wrap .quform-loading {
+  display: inline-block;
+}
+
+.light-validation .quform-errors > .quform-error {
+  color: #fff;
+}
+
+
+/* newsletter */
+.newsletter-form {
+  .quform-elements {
+    position: relative;
+  }
+
+  .quform-submit-inner {
+    position: absolute;
+    right: 18px;
+    top: -72px;
+    width: auto;
+  }
+
+  .quform-loading-wrap {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  input {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 60px;
+    padding: 0.5rem 4rem 0.5rem 1.5rem;
+  }
+
+  .quform-has-error {
+    input, textarea, select {
+      border-color: #f5543f;
+    }
+  }
+
+  .quform-input .quform-errors-wrap {
+    right: 15px;
+  }
+
+  i {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+}
+

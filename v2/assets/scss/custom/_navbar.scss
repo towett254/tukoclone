@@ -1,0 +1,90 @@
+//
+// Bootstrap navbar nav overrides
+//
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 10rem;
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-brand.medium {
+    width: 20rem;
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+  }
+
+  .navbar-nav {
+    li.dropdown {
+      &:hover > .dropdown-menu {
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-3px) scale(1);
+      }
+
+      > .dropdown-menu {
+        display: block;
+        margin: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-3px) scale(0.97);
+        transition: all .2s ease;
+        top: auto;
+        background-color: #fff;
+        border-radius: 3px;
+        opacity: 0;
+        pointer-events: none;
+        border: none;
+        visibility: hidden;
+      }
+    }
+
+    .dropdown-submenu {
+      > .dropdown-menu {
+        left: 100%;
+        transform: translateX(0) translateY(-3px) scale(0.97);
+        display: block;
+        margin: 0 0 0 -0.8rem;
+        transition: all .2s ease;
+        background-color: #fff;
+        border-radius: 3px;
+        right: auto;
+        top: 0;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      &:hover > .dropdown-menu {
+        transform: none;
+        transition: none;
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        left: 100%;
+        z-index: 9;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .navbar-collapse {
+    position: absolute;
+    top: 70px;
+    background: $white;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 30px rgba(83, 88, 93, 0.15);
+    left: 0;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+}

@@ -1,0 +1,119 @@
+//
+// Banner and Slider
+//
+
+/* classic banner */
+.classic-banner {
+  background: url(../img/content/brush-img.png) no-repeat center center;
+  background-size: auto;
+}
+
+/* main slider */
+.main-slider {
+  overflow: hidden;
+  position: relative;
+
+  .container {
+    position: unset;
+  }
+
+  .header-shape-bg {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: -8px;
+    height: 100%;
+    max-width: 105px;
+    width: 100%;
+  }
+
+  .owl-stage-outer, .owl-stage, .owl-item {
+    height: 100%;
+  }
+}
+
+.slider-section .owl-theme .owl-nav {
+  margin: 0;
+  position: absolute;
+  right: 35px;
+  bottom: 20px;
+
+  [class*=owl-] {
+    background: $primary;
+    color: $white;
+    width: 3rem;
+    height: 3rem;
+
+    &:hover {
+      background: $white;
+      color: $primary;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .main-slider {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .min-height {
+      min-height: 673px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .main-slider {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .header-shape-bg {
+      left: -2px;
+    }
+  }
+}
+
+/* classic slider */
+.classic-slider.owl-theme {
+  .owl-nav.disabled + .owl-dots {
+    counter-reset: slides-num;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    background: $warning;
+    padding: 10px;
+    color: $white;
+    margin: 0;
+    width: 120px;
+  }
+
+  .owl-dots {
+    .owl-dot {
+      counter-increment: slides-num;
+      position: relative;
+      margin: 0;
+
+      span {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: counter(slides-num);
+      font-size: 18px;
+      position: relative;
+      top: 0;
+      left: 8px;
+    }
+
+    .owl-dot.active:before {
+      content: counter(slides-num) " /";
+      font-size: 26px;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+}

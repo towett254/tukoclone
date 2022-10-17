@@ -1,0 +1,33 @@
+// Bootstrap Variables
+@import "../libs/bootstrap/scss/functions";
+@import "../libs/bootstrap/scss/variables";
+
+// Cavistar variables and mixins 
+@import "variables";
+@import "mixins";
+
+// User Variables
+@import "user-variables";
+
+// Bootstrap core
+@import "../libs/bootstrap/scss/bootstrap";
+
+// Extended Bootstrap custom components
+@import "custom/navbar";
+@import "custom/nav";
+@import "custom/buttons";
+@import "custom/forms";
+@import "custom/pagination";
+@import "custom/badge";
+
+// Cavistar Core CSS
+@import "core/general";
+@import "core/helpers";
+@import "core/header";
+@import "core/footer";
+
+// Cavistar Components 
+@import "components";
+
+// In this scss you can write your scss
+@import "user";

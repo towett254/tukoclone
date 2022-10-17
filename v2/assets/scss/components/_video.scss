@@ -1,0 +1,63 @@
+//
+// Testimonials
+//
+
+.story-video .btn-light-primary:hover .feather {
+  color: $white;
+}
+
+.video-btn {
+  -webkit-animation: 2.4s cubic-bezier(0.8, 0, 0, 1) 0s normal none infinite running pulse;
+  animation: 2.4s cubic-bezier(0.8, 0, 0, 1) 0s normal none infinite running pulse;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  font-size: 28px;
+  height: 70px;
+  line-height: 62px;
+  width: 70px;
+  margin: 0 20px;
+  padding: 0 0 0 5px;
+  position: relative;
+  text-align: center;
+  border-color: $white;
+  background: transparent;
+  color: $white;
+}
+
+@-webkit-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 20px rgba(194, 244, 246, 0);
+  }
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 20px rgba(194, 244, 246, 0);
+  }
+}
+
+/* small button */
+.video-btn.small {
+  -webkit-animation: 2.4s cubic-bezier(0.8, 0, 0, 1) 0s normal none infinite running pulsesmall;
+  animation: 2.4s cubic-bezier(0.8, 0, 0, 1) 0s normal none infinite running pulsesmall;
+  margin: 0;
+  font-size: 21px;
+  height: 50px;
+  line-height: 42px;
+  width: 50px;
+}
+
+@-webkit-keyframes pulsesmall {
+  to {
+    box-shadow: 0 0 0 10px rgba(194, 244, 246, 0);
+  }
+}
+
+@keyframes pulsesmall {
+  to {
+    box-shadow: 0 0 0 10px rgba(194, 244, 246, 0);
+  }
+}
