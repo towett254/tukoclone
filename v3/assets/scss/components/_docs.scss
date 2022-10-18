@@ -1,0 +1,111 @@
+//
+// Documentation
+//
+
+.sidenav {
+  .nav-link {
+    padding: 0.2rem 0;
+    color: $secondary;
+    font-weight: 400;
+  }
+
+  .nav-item {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.doc-nav .breadcrumb {
+  padding-left: 0;
+
+  > .breadcrumb-item + .breadcrumb-item:before {
+    content: "\f054";
+    padding: 0 0.2rem 0 2px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    vertical-align: middle;
+    font-weight: 700;
+    color: $white;
+  }
+}
+
+@include media-breakpoint-up(lg){
+
+  .sidenav {
+    position: fixed;
+    top: 75px;
+    height: calc(100vh - 75px);
+    overflow: auto;
+  }
+
+  .sidenav-right {
+    right: 0;
+  }
+
+  .sidenav-left {
+    left: 0;
+  }
+
+}
+
+/* copy to clipboard */
+.html-code {
+  background-color: #fbfbfb;
+  position: relative;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #ededed;
+
+  &:before {
+    color: rgba($primary, 0.15);
+    content: "•••";
+    font-size: 30px;
+    left: 24px;
+    letter-spacing: 4px;
+    line-height: 12px;
+    position: absolute;
+    top: 24px;
+  }
+
+  .copy-element {
+    top: 20px;
+    right: 30px;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .copy-clipboard {
+    border-radius: 0.25rem;
+    background: rgba($primary, 0.15);
+    color: $secondary !important;
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer !important;
+    font-weight: 600;
+
+    &:hover {
+      background: $primary;
+      color: $white !important;
+    }
+  }
+}
+
+pre[class*=language-] {
+  max-height: 45vh;
+  height: 100%;
+  margin: 35px 0 0 0;
+  padding-top: 0;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
+
+
+  .doc-nav .navbar-dark {
+    width: 30px;
+    height: 38px;
+    position: relative;
+    top: -19px;
+  }
+}

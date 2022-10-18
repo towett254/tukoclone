@@ -1,0 +1,37 @@
+//
+// Header
+//
+
+header {
+  position: relative;
+  z-index: 99;
+}
+
+.navbar-nav .current .nav-link, .navbar-nav .active .dropdown-item, .navbar-nav .dropdown-submenu.current > a {
+  color: $primary !important; 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  &:hover, &:focus {
+    color: $white;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-dark .navbar-nav > .current > .nav-link { color: rgba($white, 0.75) !important; } 
+}
+
+@include media-breakpoint-down(md) {
+  .navbar-dark .navbar-nav .nav-link {
+    color: $gray-600;
+
+    &:hover {
+      color: $gray-600;
+      color: $primary;
+    }
+
+    &:focus {
+      color: $primary;
+    }
+  }
+}

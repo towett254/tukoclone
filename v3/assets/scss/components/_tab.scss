@@ -1,0 +1,215 @@
+//
+// Tabs
+//
+
+/* tab-style-one */
+.tab-style-one {
+  .resp-tabs-list {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    li {
+      position: relative;
+      letter-spacing: 1px;
+      display: table-cell;
+      padding: 0 15px 15px 15px;
+      margin: 0 4px 0 0;
+      font-size: 17px;
+      list-style: none;
+      cursor: pointer;
+      min-width: auto;
+      float: none;
+      color: #000;
+      background: none !important;
+
+      &.resp-tab-active {
+        border: 1px solid $primary;
+        border-bottom: none;
+        border-color: $primary !important;
+        margin-bottom: -1px;
+        border-top: 4px solid $primary !important;
+        border-bottom: 0px #fff solid;
+        border-bottom: none;
+        background-color: #fff;
+        color: $primary;
+        -ms-border-top-left-radius: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -moz-border-top-left-radius: 5px;
+        -o-border-top-left-radius: 5px;
+        -ms-border-top-right-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-top-right-radius: 5px;
+        -o-border-top-right-radius: 5px;
+        -ms-border-radius-top-left: 5px;
+        -webkit-border-radius-top-left: 5px;
+        -moz-border-radius-top-left: 5px;
+        -o-border-radius-top-left: 5px;
+        -ms-border-radius-topright: 5px;
+        -webkit-border-radius-topright: 5px;
+        -moz-border-radius-topright: 5px;
+        -o-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+
+        &:after {
+          content: "";
+          background: $primary;
+          height: 1px;
+          width: 100%;
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          margin: 0 auto;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .resp-tab-active {
+    padding: 0 15px 15px 15px !important;
+  }
+
+  .box-shadow-primary {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+ 
+  .tab-style-one {
+    ul.resp-tabs-list {
+      text-align: center;
+      display: table;
+      width: 100%;
+
+      &.text-left {}
+
+      li {
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.resp-tab-active {
+          color: $primary;
+        }
+      }
+    }
+
+    .resp-tab-content {
+      border: none;
+      padding: 0;
+    }
+  }  
+
+}
+
+@include media-breakpoint-down(md) {
+
+  .tab-style-one {
+    h2 {
+      &.resp-accordion {
+        border-color: #e4e4e4;
+        padding: 18px 21px;
+        position: relative;
+        font-size: 1rem;
+      }
+
+      &.resp-tab-active {
+        border-bottom: 0px solid #e4e4e4 !important;
+        border-top: none !important;
+        background: $primary !important;
+        color: #fff;
+        padding: 18px 21px !important;
+
+        &.resp-accordion:after {
+          color: $white;
+        }
+      }
+    }
+
+    .resp-tab-content {
+      border-color: #e4e4e4;
+    }
+
+    h2.resp-accordion {
+      &.resp-tab-active {
+        border-color: #e4e4e4 !important;
+      }
+
+      &:first-child {
+        border-top: 1px solid #e4e4e4;
+      }
+    }
+
+    ul.resp-tabs-list {
+      display: none;
+    }
+
+    h2.resp-accordion {
+      display: block;
+    }
+
+    .resp-tab-content {
+      border-top: none !important;
+    }
+
+    h2 {
+      &.resp-tab-active {
+        background: #ffffff;
+      }
+
+      &.resp-accordion:after {
+        background: none;
+        content: "+";
+        right: 17px;
+        left: inherit;
+        font-size: 20px;
+        height: auto;
+        -webkit-transform: none;
+        transform: none;
+        width: auto;
+        position: absolute;
+        color: #286efb;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        height: 34px;
+      }
+    }
+  }
+
+  .resp-arrow {
+    display: none;
+  }
+
+  .tab-style-one {
+    h2.resp-accordion.resp-tab-active:after {
+      background: none;
+      content: "-";
+      right: 18px;
+      left: inherit;
+      font-size: 20px;
+      height: auto;
+      -webkit-transform: none;
+      transform: none;
+      width: auto;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      height: 34px;
+    }
+
+    .resp-accordion-closed {
+      display: none !important;
+    }
+
+    .resp-tab-content {
+      background-color: #fff;
+    }
+  }
+
+}
+

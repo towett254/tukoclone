@@ -1,0 +1,125 @@
+// Base class
+//
+// Requires one of the contextual, color modifier classes for `color` and
+// `background-color`.
+
+.badge {
+  font-size: 13px;
+  padding: 5px 20px;
+  line-height: 1.6;
+}
+
+.badge-lg {
+    padding: .7em 1.15em
+}
+
+.badge-primary-soft {
+    background-color: rgba($primary, $opacity1);
+    color: $primary;
+}
+
+a.badge-primary-soft:focus,
+a.badge-primary-soft:hover {
+    background-color: rgba($primary, $opacity2);
+    color: $primary;
+}
+
+.badge-secondary-soft {
+    background-color: rgba($secondary, $opacity1);
+    color: $secondary;
+}
+
+a.badge-secondary-soft:focus,
+a.badge-secondary-soft:hover {
+    background-color: rgba($secondary, $opacity2);
+    color: $secondary;
+}
+
+.badge-success-soft {
+    background-color: rgba($success, $opacity1);
+    color: $success;
+}
+
+a.badge-success-soft:focus,
+a.badge-success-soft:hover {
+    background-color: rgba($success, $opacity2);
+    color: $success;
+}
+
+.badge-info-soft {
+    background-color: rgba($info, $opacity1);
+    color: $info;
+}
+
+a.badge-info-soft:focus,
+a.badge-info-soft:hover {
+    background-color: rgba($info, $opacity2);
+    color: $info;
+}
+
+.badge-warning-soft {
+    background-color: rgba($warning, $opacity1);
+    color: $warning;
+}
+
+a.badge-warning-soft:focus,
+a.badge-warning-soft:hover {
+    background-color: rgba($warning, $opacity2);
+    color: $warning;
+}
+
+.badge-danger-soft {
+    background-color: rgba($danger, $opacity1);
+    color: $danger;
+}
+
+a.badge-danger-soft:focus,
+a.badge-danger-soft:hover {
+    background-color: rgba($danger, $opacity2);
+    color: $danger;
+}
+
+.badge-light-soft {
+    background-color: rgba($gray-100, $opacity1);
+    color: $gray-100;
+}
+
+a.badge-light-soft:focus,
+a.badge-light-soft:hover {
+    background-color: rgba($gray-100, $opacity2);
+    color: $gray-100;
+}
+
+.badge-dark-soft {
+    background-color: rgba($gray-800, $opacity1);
+    color: $gray-800;
+}
+
+a.badge-dark-soft:focus,
+a.badge-dark-soft:hover {
+    background-color: rgba($gray-800, $opacity2);
+    color: $gray-800;
+}
+ 
+
+.badge-white-soft {
+    background-color: rgba($white, $opacity1);
+    color: $white;
+}
+
+a.badge-white-soft:focus,
+a.badge-white-soft:hover {
+    background-color: rgba($white, $opacity2);
+    color: #fff
+}
+
+.badge-white-soft.active {
+    background-color: $white;
+    color: $primary;
+}
+
+.badge-white-soft.active:focus,
+.badge-white-soft.active:hover {
+    background-color: $gray-100;
+    color: $primary;
+}
